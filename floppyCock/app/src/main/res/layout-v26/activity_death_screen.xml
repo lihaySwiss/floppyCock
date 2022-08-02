@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".death_screen">
+
+    <ImageView
+        android:id="@+id/endScreen"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/floppyend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/score_txt"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/flopfont_num"
+        android:justificationMode="inter_word"
+        android:lines="1"
+        android:maxLength="3"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="9"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:flow_wrapMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/endScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/endScreen"
+        app:layout_wrapBehaviorInParent="skipped" />
+
+    <TextView
+        android:id="@+id/highScore_txt"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/flopfont_num"
+        android:justificationMode="inter_word"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/endScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/endScreen" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="97dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="retry"/>
+
+    <Button
+        android:id="@+id/nemu"
+        android:layout_width="97dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="mainMenu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
